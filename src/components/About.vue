@@ -26,7 +26,8 @@ leadership, problem-solving, teamwork, listener, communication.
               </div>
             </div>
             <div class="col-md-6 d-flex flex-column">
-              <div class="img d-flex justify-content-center mb-5"><img src="me.jpg" alt="Me" class="nikkie img-fluid"></div> 
+              <div class="img d-flex justify-content-center mb-5"><img src="https://i.postimg.cc/NjYMmcrb/me.jpg
+" alt="Me" class="nikkie img-fluid"></div> 
               <div data-aos="fade-right" class="personal d-flex flex-column text-center justify-content-center"><h4>Personal details:</h4>
                <div>Full name: Chanique Chelsea Mansoor</div>  
                <div> Date of birth:24/02/2001</div>
@@ -45,13 +46,18 @@ leadership, problem-solving, teamwork, listener, communication.
       <!--End of About-->
 </template>
 <script>
+import AOS from 'aos'
+
 export default {
     name: "About",
+    mounted() {
+    AOS.init()
+  },
 }
 </script>
 <style scoped>
   #about{
-         background-image: url();
+         background-image: url(landing.jpg);
          background-size: cover;
          height: 100vh;
          width: 100%;
@@ -73,7 +79,8 @@ export default {
          height: 350px;
          width: 300px;
          float: right;
-         padding-top: 50px;
          border-radius: 50%;
      }
+
+
 </style>

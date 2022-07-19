@@ -2,7 +2,7 @@
    <!-- Start of navbar -->
     <nav id="nav-bar">
          <img
-        src="Chanique.JPG"
+        src="https://i.postimg.cc/Kvhs2ZVZ/Chanique.jpg"
         alt=""
         class="female m-auto img-fluid"
         />
