@@ -56,6 +56,16 @@ export default {
 }
 </script>
 <style scoped>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  section {
+    min-height: 100vh;
+    min-width: 100vh;
+}
   #about{
          background-image: url(landing.jpg);
          background-size: cover;

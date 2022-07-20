@@ -57,13 +57,13 @@ export default {
     name: "Navbar",
 }
 </script>
-<style>
+<style scoped>
     #nav-bar {
-    position: fixed;
     border: 1px solid;
     width: 300px;
     height: 100%;
     background-color: #040B14;
+    left: 0;
   }
   .female {
     display: block;
