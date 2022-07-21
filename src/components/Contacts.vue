@@ -47,4 +47,8 @@ export default {
   height: 180px;
   width: 100%;
 }
+
+h2{
+  font-family: 'Lobster', cursive;
+}
 </style>

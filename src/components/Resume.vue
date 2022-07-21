@@ -1,45 +1,27 @@
 <template>
   <!--Start of Resume-->
-        <section id="resume">
-            <h3>Resume</h3>
-            <div class="timelines">
-                 </div>
-                 <div class="timeline education">
-                   <h2 class="timeline-title">Education</h2>
-                   <div class="timeline-items">
-                          <div class="timeline-item">
-                            <h3>Matric</h3>
-                            <time datetime="2017/2019">2019</time>
-                            <div class="location">Phoenix Senior Secondary High School</div>
-                          </div>
-                        </div>
+    <section id="resume">
+        <div class="timelines">
+              </div>
+              <div class="timeline education">
+                <h2 class="timeline-title">Resume</h2>
+                <div class="timeline-items">
+                      <div class="timeline-item" v-for="r of resume" :key="r">
+                        <h3>{{r.occupation}}</h3>
+                        <time datetime="2017/2019">{{ r.date }}</time>
+                        <div class="location">{{r.place}}</div>
                       </div>
-                      
-                      <div class="timeline experience">
-                        <h2 class="timeline-title">Experience</h2>
-                        <div class="timeline-items">
-                          <div class="timeline-item">
-                            <h3>Teachers Assistant</h3>
-                            <time datetime="2020/2022">2020-2021 &ndash; Present</time>
-                            <div class="location">Little Bugs Educare</div>
-                          </div>
-                          <div class="timeline-item">
-                            <h3>Hostess</h3>
-                            <time datetime="2019/2020">2019 &ndash; 2020</time>
-                            <div class="location">Wimpy, Cape Town</div>
-                          </div>
-                          
-                        </div>
-                      </div>
-        </section>
+                    </div>
+                  </div>
+    </section>
       <!--End of Resume-->
 </template>
 <script>
 export default {
     name: "Resume",
-}
-
-let resume =[
+    data(){
+      return {
+        resume: [
         {
             date: "2017-2019",
             place: "Phoenix Secondary School",
@@ -60,14 +42,19 @@ let resume =[
             occupation: "Hostess",
             responsabilities: "Greet,seat and serve guests.",
         },
-    ];
+    ]
+      }
+    }
+}
+
 </script>
 <style scoped>
          #resume{
          background-image: url(landing.jpg);
          background-size: cover;
-         height: 100vh;
+         /* height: 100vh; */
          width: 100%;
+         padding: 20px
      }
      .section title h2{
         font-size: 32px;
@@ -103,27 +90,14 @@ let resume =[
         justify-content: center;
         align-items: center;
         }
-    
-    
-    
-    
-    
-    
     .timelines {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
       align-items: center;
       background-color: transparent;
-    }
-    
-    .timeline-title {
-      font-size: 1em;
-      font-weight: bold;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    }    
+   
     
     .timeline-item {
       margin-bottom: 2em;
@@ -147,7 +121,7 @@ let resume =[
     }
     
     .timeline-items {
-      margin: 2em;
+      /* margin: 2em; */
       padding: 0.01em 0 3em 2em;
       border-left: 1px solid blue;
     }

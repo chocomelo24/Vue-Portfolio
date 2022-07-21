@@ -1,184 +1,169 @@
 <template>
-   <!--Start of Testimonials-->
-        <section id="testimonials">
-        <h2 class="d-flex justify-content-center align-items center">Testimonials</h2>
-        <div id="carouselExampleCaptions" class="carousel slide row" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item carousel-padding active">
-              <div class="d-flex justify-content-center">
-                <img src="https://i.postimg.cc/QCZYCHKX/Tristan.jpg" class="mimi d-block" alt="Male">
-              </div>
-              <div class="carousel-caption ">
-                <h5>Tristan</h5>
-                <p>"Chanique is not afraid of seeking clarity with things she does not understand.She will be a core part of improving team morale."</p>
-              </div>
-            </div>
-            <div class="carousel-item carousel-padding ">
-              <div class="d-flex justify-content-center">
-                <img src="https://i.postimg.cc/DZWynftf/jason.jpg" class="jay d-block" alt="Male">
-              </div>
-              <div class="carousel-caption ">
-                <h5>Jason</h5>
-                <p>"Chanique is a very kind and social individual who brightens the day of the people she surrounds herself with. She works well with new work and strives to achieve her best in every situation. I wish Chanique the best in her future as a developer."</p>
-              </div>
-            </div>
-            <div class="carousel-item carousel-padding">
-              <div class="d-flex justify-content-center">
-                <img src="https://i.postimg.cc/MHfRGn99/Cameron-1.jpg
-" class="cam d-block" alt="Women">
-              </div>
-              <div class="carousel-caption ">
-                <h5>Cameron</h5>
-                <p>"Chanique is a very hardworking person, who gives and does her best in all aspects. She also has a very patient and bubbly personality."</p>
-              </div>
-            </div>
-
-            <div class="carousel-item carousel-padding">
-              <div class="d-flex justify-content-center"><img src="https://i.postimg.cc/hjjTHyTW/Zachary-2.jpg
-" class="zach d-block" alt="Male"></div>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Zachary</h5>
-                <p>"Chanique Mansoor is a bright and talented individual, who pushes to improve herself.She has a great sense of humour.She will be great attribute in any working environment."</p>
-              </div>
-            </div>
-            <div class="carousel-item carousel-padding">
-              <div class="d-flex justify-content-center align-items-center"><img src="https://i.postimg.cc/wB9hkTBB/Sunethia-2.jpg
-" class="sun d-block" alt="Women"></div>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Sunethia</h5>
-                <p>"Chanique is a fun, loving and hard-working person. She always focuses on the job at hand."</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-i2 con" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+<section class="Nikkie" id="Testimonials">
+<h2 class="d-flex justify-content-center align-items center">Testimonials</h2>
+ <div class="testimonial">
+    <div class="card" v-for="t of testimonials" :key="t.name">
+      <div class="layer"></div>
+      <div class="content">
+        <p>"{{t.testimonial}}"</p>
+        <div class="image"><img :src="t.profile" :alt="t.name"> 
         </div>
-        </section>
-      <!--Start of Testimonials-->
+        <div class="details">
+          <h2 class="word">{{ t.name }} - <span>{{t.occupation}}</span></h2>
+        </div>
+             </div>
+    </div>
+    
+    
+  </div>
+</section>
 </template>
 <script>
 export default {
     name: "Testimonials",
-}
+    data(){
+      return {
+        testimonials: [
+        {
 
-let testimonials = [
-        {
-            name: "Mika",
-            testimonials: "Chanique is not afraid of seeking clarity with things she does not understand.She will be a core part of improving team morale.",
-            occupation: "Student",
-            profile: "./images/Mika.jpg",
-        },
+            testimonial: "Chanique is not afraid of seeking clarity with things she does not understand.She will be a core part of improving team morale.",
+            profile: "https://i.postimg.cc/QCZYCHKX/Tristan.jpg",
+            name: "Tristan",
+            occupation: "Colleague",
+            },
   
         {
-            name: "Jason",
-            testimonials: "Chanique is a very kind and social individual who brightens the day of the people she surrounds herself with. She works well with new work and strives to achieve her best in every situation. I wish Chanique the best in her future as a developer.",
-            occupation: "Lecturer",
+          testimonial: "Chanique is a GOAT🐐. She works well with new work and strives to achieve her best in every situation. I wish Chanique the best in her future as a developer.",
             profile: "https://i.postimg.cc/DZWynftf/jason.jpg",
-        },
+            name: "Jason",
+            occupation: "Lecturer",
+            },
   
         {
-            name: "Cameron",
-            testimonials: "Chanique is a very hardworking person, who gives and does her best in all aspects. She also has a very patient and bubbly personality.",
-            occupation: "Student",
-            profile: "https://i.postimg.cc/MHfRGn99/Cameron-1.jpg",
-        },
-   
+          testimonial: "🐐🐐👌",
+            profile: "https://i.postimg.cc/P5fXQ0fB/ricardo-gomez-angel-o-X-c-UTE-IUo-unsplash.jpg",
+            name: "Goat Man",
+            occupation: "Goat",
+            },
+  
         {
-            name: "Zachary",
-            testimonials: "Chanique Mansoor is a bright and talented individual, who pushes to improve herself.She has a great sense of humour.She will be great attribute in any working environment.",
-            occupation: "Student",
-            profile: "https://i.postimg.cc/hjjTHyTW/Zachary-2.jpg",
-        },
+          testimonial: "Chanique is a very hardworking person, who gives and does her best in all aspects. She also has a very patient and bubbly personality.",
+            profile: "https://i.postimg.cc/MHfRGn99/Cameron-1.jpg",
+            name: "Cameron",
+            occupation: "Colleague",
+            },
+   
  
         {
-            name: "Sunethia",
-            testimonials: "Chanique is a fun, loving and hard-working person. She always focuses on the job at hand.",
-            occupation: "Student",
+          testimonial: "Chanique is a fun, loving and hard-working person. She always focuses on the job at hand.",
             profile: "https://i.postimg.cc/wB9hkTBB/Sunethia-2.jpg",
-        },
-    ];
-    
+            name: "Sunethia",
+            occupation: "Colleague",
+            },
+    ]
+      }
+    }
+}
 </script>
 <style scoped>
-     #testimonials{
-      background-image: url(landing.jpg);
-      background-size: cover;
-      height: 100vh;
-      width: 100%;
-      padding-top: 55px;
-      
-    }
+section {
+    min-height: 100vh;
+    min-width: 100vh;
+    background-image: url(landing.jpg);
+   background-size: cover;
+}
+    body{
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100vh;
+  background:#262626;
+  color:#fff;
+  font-family:sans-serif;
 
-    .carousel-item {
-      background-color: lightgray;
-    }
+}
+.testimonial{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap:20px;
+}
 
-    .carousel-caption {
-       color: black;
-    }
+.card{
+  display: flex;
+  align-items: center;
+}
 
-    .carousel-padding{
-      padding-bottom: 140px;
-    }
-    .carousel-indicators{
-      margin-left: 0%;
-    }
-/* 
-    .carousel-indicators {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0;
-      margin-right: 15%;
-      margin-bottom: 1rem;
-      list-style: none;
-    } */
+.testimonial .card{
+  position:relative;
+  margin:0 auto;
+  width:350px;
+  background:#333;
+  padding:20px;
+  box-sizing:border-box;
+  text-align:center;
+  box-shadow:0 10px 40px rgba(0,0,0,.5);
+  overflow:hidden;
+}
+.testimonial .card .layer{
+  position:absolute;
+  top:calc(100% - 2px);
+  left:0;
+  height:100%;
+  width:100%;
+  background:linear-gradient(#03a9f4, #e91ee3);
+  z-index:1;
+  transition:0.5s;
+}
+.testimonial .card:hover .layer{
+  top:0;
+}
+.testimonial .card .content{
+  position:relative;
+  z-index:2;
+}
+.testimonial .card .content p{
+  font-size:12px;
+  line-height:24px;
+}
+.testimonial .card .content .image{
+  width:128px;
+  height:128px;
+  margin:0 auto;
+  border-radius:50%;
+  overflow:hidden;
+  border:4px solid #fff;
+  box-shadow:0 10px 20px
+    rgba(0,0,0,.2);
+}
+.testimonial .card .content .details h2{
+  font-size:18px;
+}
+.testimonial .card .content .details span{
+  color:#03a9f4;
+  font-size:14px;
+  transition:0.5s;
+}
+.testimonial .card:hover .content .details span{
+  color:#fff;
+}
 
-    .mimi{
-      width: 300px;
-      height: 400px;
-    }
-
-    .jay{
-      width: 300px;
-      height: 400px;
-    }
-    
+h2{
+  font-family: 'Lobster', cursive;
+}
+.word{
+  color: white;
+}
 
 
-    .zach{
-      width: 300px;
-      height: 400px;
-    }
-
-    .cam{
-      width: 300px;
-      height: 400px;
-      
-    }
+p{
+  color: white;
+}
   
 
-    .sun{
-      width: 300px;
-      height: 400px;
-    }
+img{
+  width: 100%;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
 
 </style>

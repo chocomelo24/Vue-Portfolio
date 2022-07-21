@@ -1,6 +1,6 @@
 <template>
  <Navbar />
-  <!-- <router-view /> -->
+ <main>
   <HelloWorld />
   <About />
   <Resume />
@@ -8,6 +8,9 @@
   <Projects />
   <Testimonials />
   <Contacts />
+
+ </main>
+  <!-- <router-view /> -->
 </template>
 
 <script>
@@ -33,4 +36,7 @@ export default {
 };
 </script>
 <style>
+main{
+  margin-left: 300px
+}
 </style>

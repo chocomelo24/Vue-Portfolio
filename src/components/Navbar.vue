@@ -35,7 +35,7 @@
             >
         </li>
         <li class="nav-link">
-            <a href="#testimonials" class="link"
+            <a href="#Testimonials" class="link"
             ><i class="fa-solid fa-comment-dots"></i>Testimonials</a
             >
         </li>
@@ -64,6 +64,7 @@ export default {
     height: 100%;
     background-color: #040B14;
     left: 0;
+    position: fixed;
   }
   .female {
     display: block;
@@ -160,7 +161,7 @@ export default {
     font-size: 25px;
     height: 50px;
     width: 50px;
-    border-radius: 50%;
+    border-radius: 50%; 
     background-color: #149DDD;
     color: white;
   }

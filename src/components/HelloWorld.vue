@@ -1,4 +1,4 @@
-<template>
+<template>  
 <!--Start of Landing-->
         <section class="min-vh-100" id="landing">
             <div class="text">
@@ -30,6 +30,7 @@ export default {
     min-height: 100vh;
     min-width: 100vh;
 }
+
  #landing{
       background-image: url(landing-port.gif);
       background-size: cover;
@@ -58,4 +59,6 @@ export default {
      .text h2 {
          font-size: 40px;
      }
+
+
 </style>
