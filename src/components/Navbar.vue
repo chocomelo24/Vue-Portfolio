@@ -176,4 +176,11 @@ export default {
    justify-content: end;
    align-items: center;
  }
+
+ @media only screen and (max-width: 900px) {
+  #nav-bar{
+    width: 300px;
+    height:100%;
+  }
+ }
 </style>

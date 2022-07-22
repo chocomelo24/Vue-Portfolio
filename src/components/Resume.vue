@@ -146,4 +146,11 @@ export default {
       font-size: 0.85em;
       font-style: italic;
     }
+
+    @media only screen and (max-width: 900px) {
+      #resume{
+        width: 94vh;
+        height: 0;
+      }
+    }
 </style>

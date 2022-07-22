@@ -49,7 +49,7 @@
                   </div>
                 <div class="skills-col">
                     <div class="skills-title">
-                      <h3>Data basis 20%</h3>
+                      <h3>Databases 20%</h3>
                         <p></p>
                       </div>
                       <meter value="20" min="0" max="100">2 out of 10</meter>
@@ -147,5 +147,16 @@ export default {
     meter{
         width: 100%;
     
+    }
+
+    @media only screen and (max-width: 900px) {
+      #skills{
+        width: 100vh;
+        height: 0;
+      }
+
+      .col-md-6{
+        width: 0;
+      }
     }
 </style>

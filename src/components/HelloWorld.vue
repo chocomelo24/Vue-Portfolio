@@ -60,5 +60,12 @@ export default {
          font-size: 40px;
      }
 
+     @media only screen and (max-width: 900px) {
+        #landing{
+            width: 100vh;
+            height: 0;
+        }
+     }
+
 
 </style>

@@ -164,4 +164,12 @@ export default {
   transform:scale(1.2)
 }
 
+@media only screen and (max-width: 900px) {
+  #projects{
+    width: 100vh;
+    height: 0;
+  }
+}
+
+
 </style>

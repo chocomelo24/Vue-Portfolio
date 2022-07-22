@@ -83,5 +83,14 @@ export default {
          border-radius: 50%;
      }
 
+@media only screen and (max-width: 900px) {
+  #about{
+    width: 100vh;
+    height: 0;
+  }
+  .card-body{
+    box-sizing: none;
+  }
+}
 
 </style>

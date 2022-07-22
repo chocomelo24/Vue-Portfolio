@@ -166,4 +166,12 @@ img{
   aspect-ratio: 1;
 }
 
+@media only screen and (max-width: 900px) {
+ /* #Testimonials{
+  width: 100vh;
+  height: 0;
+ } */
+
+}
+
 </style>
