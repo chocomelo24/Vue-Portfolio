@@ -28,14 +28,12 @@ export default {
   }
   section {
     min-height: 100vh;
-    min-width: 100vh;
 }
 
  #landing{
       background-image: url(landing-port.gif);
       background-size: cover;
-      height: 100vh;
-      width: 100%;
+      background-repeat: no-repeat;
       display: flex;
     align-content: center;
     justify-content: center;
@@ -59,13 +57,5 @@ export default {
      .text h2 {
          font-size: 40px;
      }
-
-     @media only screen and (max-width: 900px) {
-        #landing{
-            width: 100vh;
-            height: 0;
-        }
-     }
-
 
 </style>

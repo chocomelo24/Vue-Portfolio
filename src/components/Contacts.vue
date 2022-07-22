@@ -38,8 +38,6 @@ export default {
     #contacts{
       background-image: url(landing.jpg);
       background-size: cover;
-      height: 100vh;
-      width: 100%;
       padding: 100px;
     }
     
@@ -52,23 +50,5 @@ h2{
   font-family: 'Lobster', cursive;
 }
 
-@media only screen and (max-width: 900px) {
-  #contacts{
-  width: 100vh;
-  height: 0;
-  padding: 0;
-  }
 
-  #mess{
-    width: 90%;
-  }
-
-  .mb-3{
-    margin-left: 20px;
-  }
-
-  .form control{
-    width: 80%;
-  }
-}
 </style>

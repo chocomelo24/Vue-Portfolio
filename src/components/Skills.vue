@@ -1,8 +1,8 @@
 <template>
    <!--Start of Skills-->
         <section id="skills">
-          <div class="row">
-            <div class="Skills col-md-6">
+          <div class="column">
+            <div class="Skills">
               <div class="card">
                 <div class="card-body">
                   <h2>Skills</h2>
@@ -58,7 +58,7 @@
                 </div>
               </div>
             </div>
-            <div class="skill-icon col-md-6">
+            <div class="skill-icon">
               <div class="row">
               <div class="soos col-md-4">
                 <i class="fa-brands fa-html5"></i>
@@ -99,12 +99,9 @@ export default {
     #skills{
         background-image: url(landing.jpg);
         background-size: cover;
-         height: 100vh;
-         width: 100%;
+         display: flex;
+         justify-content: center;
     }
-
-
-
     .skills-title{
         display:flex;
         justify-content: space-between;
@@ -114,15 +111,11 @@ export default {
     .Skills{
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      padding-top: 150px;
-      padding-left: 20px;
-      align-content: flex-start;
-    }
+      justify-content: center;
+      align-items: center;
+      }
 
     .skill-icon {
-      padding-top: 150px;
       font-size: 80px;
     }
 
@@ -147,16 +140,5 @@ export default {
     meter{
         width: 100%;
     
-    }
-
-    @media only screen and (max-width: 900px) {
-      #skills{
-        width: 100vh;
-        height: 0;
-      }
-
-      .col-md-6{
-        width: 0;
-      }
     }
 </style>

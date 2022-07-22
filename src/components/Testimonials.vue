@@ -68,14 +68,13 @@ export default {
 <style scoped>
 section {
     min-height: 100vh;
-    min-width: 100vh;
     background-image: url(landing.jpg);
    background-size: cover;
 }
     body{
   margin:0;
   padding:0;
-  width:100%;
+  
   height:100vh;
   background:#262626;
   color:#fff;
@@ -164,14 +163,9 @@ img{
   width: 100%;
   border-radius: 50%;
   aspect-ratio: 1;
+  object-fit: cover;
 }
 
-@media only screen and (max-width: 900px) {
- /* #Testimonials{
-  width: 100vh;
-  height: 0;
- } */
 
-}
 
 </style>

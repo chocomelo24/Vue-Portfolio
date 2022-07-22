@@ -142,17 +142,16 @@ export default {
     #projects{
   background-image: url(landing.jpg);
   background-size: cover;
-  height: 100vh;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
 }
-
-
-
 .p-image {
-  width: 222px;
+  width: 200px;
   aspect-ratio: 1;
   padding-top: 20px;
   margin-left: 75px;
+  object-fit: cover;
 }
 .project_btn button{
   width: 80px;
@@ -163,13 +162,4 @@ export default {
 .p-image:hover {
   transform:scale(1.2)
 }
-
-@media only screen and (max-width: 900px) {
-  #projects{
-    width: 100vh;
-    height: 0;
-  }
-}
-
-
 </style>

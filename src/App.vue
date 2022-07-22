@@ -1,14 +1,27 @@
 <template>
  <Navbar />
- <main>
+ <main id="all">
+  <section>
   <HelloWorld />
+  </section>
+  <section>
   <About />
+  </section>
+  <section>
   <Resume />
+  </section>
+  <section>
   <Skills />
+  </section>
+  <section>
   <Projects />
+  </section>
+  <section>
   <Testimonials />
+  </section>
+  <section>
   <Contacts />
-
+</section>
  </main>
   <!-- <router-view /> -->
 </template>
@@ -36,7 +49,13 @@ export default {
 };
 </script>
 <style>
-main{
+#all{
   margin-left: 300px
 }
+
+@media only screen and (max-width: 900px) {
+  #all{
+   margin-left:0;
+  }
+ }
 </style>

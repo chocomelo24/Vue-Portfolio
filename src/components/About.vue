@@ -2,14 +2,14 @@
 <!--Start of About-->
         <section class="mt-3" id="about">
             <div class="container-fluid">
-            <div class="row flex-sm-column flex-md-row">
+            <div class="row flex-sm-row flex-md-row">
             <div  data-aos="fade-left" class="about-title col-md-6 text-center ">
               <div class="card">
                 <div class="card-body">
                   <div data-aos="fade-up-left">
                     <h2>About me</h2>
                   </div>
-                <div class="mt-4">
+                <div class="mt-4 bio">
                   <h3>Bio</h3>
 I like to describe myself as an extroverted - introvert, someone who loves outgoing yet reserved and humbled. I love gaining new experiences and exploring every aspect of life. I've always wanted to do coding because I was intrigued by how websites work and interested in how applications are developed.
 I became interested in coding at a young age. I would try and fiddle around trying to figure out how certain codes made up certain websites. After I matriculated in 2019 I went to study IT and it wasn't really what I wanted to do. A few years later after working in different career fields, I came across Life Choices Academy and their coding course. I immediately knew I had to apply after doing research on their curriculum and what I could expect, it was exactly what I had been wanting to learn all this time. I am learning new things every day and it's fascinating especially CSS because I love the styling aspect. I  appreciate that I got an opportunity to study at the Academy.
@@ -60,8 +60,6 @@ export default {
 
          background-image: url(landing.jpg);
          background-size: cover;
-         height: 100vh;
-         width: 100%;
          display: flex;
          align-items: center;
        }
@@ -82,15 +80,4 @@ export default {
          float: right;
          border-radius: 50%;
      }
-
-@media only screen and (max-width: 900px) {
-  #about{
-    width: 100vh;
-    height: 0;
-  }
-  .card-body{
-    box-sizing: none;
-  }
-}
-
 </style>

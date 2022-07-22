@@ -52,8 +52,6 @@ export default {
          #resume{
          background-image: url(landing.jpg);
          background-size: cover;
-         /* height: 100vh; */
-         width: 100%;
          padding: 20px
      }
      .section title h2{
@@ -148,9 +146,9 @@ export default {
     }
 
     @media only screen and (max-width: 900px) {
-      #resume{
-        width: 94vh;
+      /* #resume{
+         94vh;
         height: 0;
-      }
+      } */
     }
 </style>
