@@ -1,10 +1,9 @@
 <template>
    <!--Start of Skills-->
-        <section id="skills">
-          <div class="column">
+        <section id="skills" class="d-flex flex-column">
             <div class="Skills">
               <div class="card">
-                <div class="card-body">
+                <div class="skills-card">
                   <h2>Skills</h2>
                 <p></p>
                 <div class="skills-col">
@@ -86,7 +85,6 @@
               </div>
             </div>
             </div>
-          </div>
         </section>
       <!--End of Skills--> 
 </template>
@@ -117,6 +115,8 @@ export default {
 
     .skill-icon {
       font-size: 80px;
+      display: flex;
+      justify-content: center;
     }
 
     .row .soos :hover {
@@ -139,6 +139,11 @@ export default {
     }
     meter{
         width: 100%;
-    
+    }
+    .skills-card{
+      width:300px
+    }
+    .skills-col{
+      width: 50%;
     }
 </style>

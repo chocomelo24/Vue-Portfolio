@@ -50,8 +50,12 @@ export default {
 </script>
 <style>
 #all{
-  margin-left: 300px
+  margin-left: 300px;
+  overflow-x: hidden;
 }
+
+/* body{
+} */
 
 @media only screen and (max-width: 900px) {
   #all{
